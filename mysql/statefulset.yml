@@ -20,8 +20,8 @@ spec:
         image: mysql:8.0
         ports:
         - containerPort: 3306
-        resources:
-          requests:
+        resources: # This line asking machine to get mini limit and maxi limit
+          requests:   
             cpu: 100m
             memory: 128Mi
           limits:
